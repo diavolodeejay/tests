@@ -1,0 +1,160 @@
+body { 
+  -webkit-animation: bugfix infinite 1s; 
+    background-color: #EFEFEF;
+}
+
+@-webkit-keyframes bugfix { 
+  to { padding: 0; } 
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+	color: #6DC066;
+	outline:0; 
+	text-decoration:none;
+}
+
+a:hover {
+	color:#0064FF;
+}
+
+amenu {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color:#FFFFFF;
+	font-size: 28px;
+	position: relative;
+    left: +20px;
+}
+
+menu {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+amenu:hover {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+/*	color:#0064FF;*/
+	color:#CCCCCC;
+	font-size: 28px;
+	position: relative;
+    left: +20px;
+}
+
+teston {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color:#000000;
+	font-size:25px;
+}
+
+input[id="cerca"] {
+	width: 55%;
+	height: 28px;
+	font-size: 23px;
+	border: 1px solid #bbb;
+	bottom: 0px;
+
+}
+
+input[id="ricercabtn"] {
+
+	width: 15%;
+	height: 28px;
+	font-size: 23px;
+	border: 1px solid #bbb;
+	padding-top: 0px;
+}
+
+
+body.in-transition {
+  transition: transform 900ms ease-in-out;
+}
+
+titolouno {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 400%;
+	color: #6DC066;
+}
+/**
+ * Offcanvas navigation
+ * 1. Arbitrary width, feel free to adapt
+ * 2. Full height nav
+ * 3. Off-canvas
+ * 4. Responsible for opening/closing animation
+ */
+.nav {
+  width: 350px; /* 1 */
+  position: fixed;
+  top: 0; /* 2 */
+  bottom: 0; /* 2 */
+  transform: translateX(-100%); /* 3 */
+  left: 0;
+  background: #333;
+ /* background: #e1e1e1;*/
+  transition: 1.0s; /* 4 */
+}
+
+/**
+ * Button thingie
+ * 1. Absolutely positioning
+ * 2. ... on the right side of the nav (make sure overflow is visible)
+ */
+.nav-toggle {
+  position: absolute; /* 1 */
+  left: 100%; /* 2 */
+  top: 1em;
+  padding: 0.5em;  
+  background: inherit;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+/**
+ * Checkbox responsible for the toggle hack
+ * Hidden, no matter what
+ * Lower the selector specificity by using an attribute rather than an ID
+ */
+[id='nav-toggle'] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}
+
+/**
+ * When checkbox is checked, open the nav
+ * Lower the selector specificity by using an attribute rather than an ID
+ */
+[id='nav-toggle']:checked ~ .nav {
+  transform: translateX(0);
+}
+
+/**
+ * Rotate the label when nav is opened
+ * Purely aesthetic
+ * Lower the selector specificity by using an attribute rather than an ID
+ */
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+  transform: rotate(90deg);
+}
+
+/**
+ * Take care of small screens
+ */
+@media (max-width: 350px) {
+  .nav {
+    width: 100%;
+  }
+  
+  [id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+}

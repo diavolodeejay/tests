@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+}
+
+.nav {
+  width: 350px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  left: 0;
+  
+  background: #00BBFF;
+  transition: 0.60s;
+}
+
+.nav-toggle {
+  position: absolute;
+  left: 100%;
+  top: 1em;
+  
+  padding: 0.5em;  
+  background: inherit;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 10;
+}
+
+[id='nav-toggle'] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}
+
+[id='nav-toggle']:checked ~ .nav {
+  transform: translateX(0);
+}
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+  transform: rotate(90deg);
+}
+
+body { 
+  -webkit-animation: bugfix infinite 1s; 
+}
+
+a {
+	outline:0;
+	text-decoration:none;
+}
+
+@-webkit-keyframes bugfix { 
+  to { padding: 0; } 
+}
+
+@media (max-width: 350px) {
+  .nav {
+    width: 100%;
+  }
+  
+  [id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+}
+
+.no-csstransforms .nav {
+  left: -350px;
+}
+
+.no-csstransforms [id='nav-toggle']:checked ~ .nav {
+  left: 0;
+}

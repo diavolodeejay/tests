@@ -1,0 +1,153 @@
+body{
+  background-color: #22313F;
+}
+.box {
+    width: 320px;
+    height: 110px;
+    margin-left: 25%;
+	margin-top:65px;
+  border-radius: 10px;
+  display: block;
+      float:left;
+}
+
+#c {
+    background-color: #448AFF;
+    box-shadow: 0px 6px 0px #2962FF;
+}
+
+testo {
+	font-size:48px;
+	font-family:'Roboto', sans-serif;
+	color:#FFFFFF;
+	margin-top:25px;
+}
+
+testo2 {
+	font-size:25px;
+	font-family:'Roboto', sans-serif;
+	color:#FFFFFF;
+	margin-top:85px;
+}
+
+titolo {
+	font-size:85px;
+	font-family:'Roboto', sans-serif;
+	color:#FFFFFF;
+	margin-top:25px;
+}
+
+#d {
+    background-color: #9CCC65;
+    box-shadow: 0px 6px 0px #2E7D32;
+
+}
+
+
+#c:active, #d:active {
+  box-shadow:none;
+  margin-top:70px;
+}
+
+#c:active{
+	background-color: #2962FF;
+}
+
+#d:active{
+  background-color: #2E7D32;
+}
+
+a {
+	outline:0;
+	text-decoration:none;
+}
+
+/*Keys*/
+
+
+
+#keys{
+    height: 116px;
+    width: 672px;
+    padding-right: 10px;
+    padding-top: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.boxk {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    float:left;
+  border-radius: 10px;
+  display: block;
+}
+#ak {
+    background-color: #E040FB;
+    box-shadow: 0px 6px 0px #AA00FF;
+} 
+
+#bk {
+    background-color: #7C4DFF;
+    box-shadow: 0px 6px 0px #6200EA;
+}
+
+#ck {
+    background-color: #448AFF;
+    box-shadow: 0px 6px 0px #2962FF;
+}
+
+#dk {
+    background-color: #9CCC65;
+    box-shadow: 0px 6px 0px #2E7D32;
+}
+
+#ek {
+    background-color: #FFF176;
+    box-shadow: 0px 6px 0px #FFD600;
+}
+
+#fk {
+    background-color: #FFB74D;
+    box-shadow: 0px 6px 0px #FF9100;
+}
+
+#gk {
+    background-color: #FF7043;
+    box-shadow: 0px 6px 0px #F4511E;
+}
+
+#ak:active, #bk:active, #ck:active, #dk:active, #ek:active, #fk:active, #gk:active {
+  box-shadow:none;
+  margin-top:5px;
+}
+
+#ak:active{
+  background-color: #AA00FF;
+}
+
+#bk:active{
+  background-color: #6200EA;
+}
+
+#ck:active{
+  background-color: #2962FF;
+}
+
+#dk:active{
+  background-color: #2E7D32;
+}
+
+#ek:active{
+  background-color: #FFD600;
+}
+
+#fk:active{
+  background-color: #FF9100;
+}
+
+#gk:active{
+  background-color: #F4511E;
+}
