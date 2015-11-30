@@ -1,0 +1,85 @@
+body { 
+	font-family: Helvetica; 
+	font-size:25px;
+	background-color:#FFFFFF;
+	color:#808080;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+	margin: auto;
+	width:85%;
+}
+
+titolo {
+	font-family: Helvetica;
+	font-size:55px;
+	background-color:#FFFFFF;
+	color:#007AFF;
+	display: block;
+    max-width:85%;
+    max-height:220px;
+    width: auto;
+    height: auto;
+	margin:auto;
+	margin-bottom:35px;
+}
+
+a {
+	text-decoration:none;
+	color:#008B07;
+}
+
+a:hover{
+	color:#4cad51;
+}
+
+input[id="nome"],input[id="cognome"],input[id="data"],select[id="sesso"],select[id="luogo"] {
+	width:auto;
+	height: 28px;
+	font-size: 21px;
+	border: 1px solid #bbb;
+	bottom: 0px;
+}
+
+button[id="send"] {
+	/*width: 25%;
+	height: 28px;
+	font-size: 23px;
+	border: 1px solid #bbb;
+	padding-top: 0px;*/
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Helvetica;
+  color: #ffffff;
+  border: solid #008B07 0px;
+  font-size: 23px;
+  background: #008B07;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+}
+
+button[id="send"]:hover {
+  background: #4cad51;
+  text-decoration: none;
+}
+p[id="tooltip"] {
+	font-size:18px;
+}
+p {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+p[id="risultato"] {
+	-webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
